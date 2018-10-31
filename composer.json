@@ -1,6 +1,7 @@
 {
     "name": "hatimeria/consignor-lib",
     "description": "Package generated from http://customer-api.consignorportal.com/PortalData/PortalData.svc?singleWsdl using wsdltophp/packagegenerator",
+    "type": "library",
     "require": {
         "php": ">=5.3.3",
         "ext-soap": "*",
