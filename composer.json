@@ -1,5 +1,5 @@
 {
-    "name": "bednrenaetter/consignor",
+    "name": "hatimeria/consignor-lib",
     "description": "Package generated from http://customer-api.consignorportal.com/PortalData/PortalData.svc?singleWsdl using wsdltophp/packagegenerator",
     "require": {
         "php": ">=5.3.3",
