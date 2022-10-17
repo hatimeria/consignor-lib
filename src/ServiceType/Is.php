@@ -42,7 +42,7 @@ class Is extends AbstractSoapClientBase
      * Method returning the class name
      * @return string __CLASS__
      */
-    public function __toString()
+    public function __toString(): string
     {
         return __CLASS__;
     }

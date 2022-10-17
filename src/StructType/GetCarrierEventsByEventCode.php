@@ -3,6 +3,7 @@
 namespace StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
+use WsdlToPhp\PackageBase\StructInterface;
 
 /**
  * This class stands for GetCarrierEventsByEventCode StructType
@@ -291,7 +292,7 @@ class GetCarrierEventsByEventCode extends AbstractStructBase
      * @param array $array the exported values
      * @return \StructType\GetCarrierEventsByEventCode
      */
-    public static function __set_state(array $array)
+    public static function __set_state(array $array): StructInterface
     {
         return parent::__set_state($array);
     }
@@ -299,7 +300,7 @@ class GetCarrierEventsByEventCode extends AbstractStructBase
      * Method returning the class name
      * @return string __CLASS__
      */
-    public function __toString()
+    public function __toString(): string
     {
         return __CLASS__;
     }

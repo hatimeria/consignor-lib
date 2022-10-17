@@ -3,6 +3,7 @@
 namespace StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
+use WsdlToPhp\PackageBase\StructInterface;
 
 /**
  * This class stands for StatusInfo StructType
@@ -144,7 +145,7 @@ class StatusInfo extends AbstractStructBase
      * @param array $array the exported values
      * @return \StructType\StatusInfo
      */
-    public static function __set_state(array $array)
+    public static function __set_state(array $array): StructInterface
     {
         return parent::__set_state($array);
     }
@@ -152,7 +153,7 @@ class StatusInfo extends AbstractStructBase
      * Method returning the class name
      * @return string __CLASS__
      */
-    public function __toString()
+    public function __toString(): string
     {
         return __CLASS__;
     }

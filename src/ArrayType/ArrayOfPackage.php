@@ -3,6 +3,7 @@
 namespace ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
+use WsdlToPhp\PackageBase\StructInterface;
 
 /**
  * This class stands for ArrayOfPackage ArrayType
@@ -133,7 +134,7 @@ class ArrayOfPackage extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::getAttributeName()
      * @return string Package
      */
-    public function getAttributeName()
+    public function getAttributeName(): string
     {
         return 'Package';
     }
@@ -145,7 +146,7 @@ class ArrayOfPackage extends AbstractStructArrayBase
      * @param array $array the exported values
      * @return \ArrayType\ArrayOfPackage
      */
-    public static function __set_state(array $array)
+    public static function __set_state(array $array): StructInterface
     {
         return parent::__set_state($array);
     }
@@ -153,7 +154,7 @@ class ArrayOfPackage extends AbstractStructArrayBase
      * Method returning the class name
      * @return string __CLASS__
      */
-    public function __toString()
+    public function __toString(): string
     {
         return __CLASS__;
     }
